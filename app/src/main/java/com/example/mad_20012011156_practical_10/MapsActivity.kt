@@ -1,5 +1,6 @@
 package com.example.mad_20012011156_practical_10
 
+import android.app.Person
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -32,6 +33,7 @@ class MapsActivity : AppCompatActivity() {
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
     }
+
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
         val sydney = LatLng(lat, log)
